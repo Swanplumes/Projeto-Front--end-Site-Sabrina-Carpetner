@@ -1,0 +1,243 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    position: relative;
+}
+
+.banner {
+    position: relative;
+}
+
+.logo {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    width: 100px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navegação */
+nav {
+    background-color: #ffecf9;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ff03b3;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: #58dd6a;
+    color: #fff;
+    border-radius: 10%;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Conteúdo Principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Seção Sobre */
+.sobre {
+    color: #ff03b3;
+    font-size: 1.5rem;
+    flex: 2;
+    padding: 20px;
+    background-color: #ffecf9;
+}
+
+.album-fotos {
+    flex: 1;
+    border-radius: 10%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.album-fotos img {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color:#ffecf9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Seção de Discografia */
+.discografia {
+    padding: 20px;
+    text-align: center;
+}
+
+.discografia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff03b3;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ff03b3;
+}
+
+.album {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    border-radius: 10%;
+}
+
+.album img:hover {
+    filter: grayscale(0%);
+}
+
+.album p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Seção de Carreira */
+.carreira {
+    margin: 20px;
+    color: #ff03b3;
+}
+
+.carreira h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Linha do Tempo */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.timeline-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilização das Imagens e Descrições */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+    border-radius: 10%;
+}
+
+.image-description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(245, 245, 220, 0.8);
+    padding: 5px;
+    font-size: 12px;
+    color: #ff00c8;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    opacity: 0.7;
+}
+
+.image-container:hover .image-description {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #ffecf9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos Responsivos */ organizar de novo
+@media screen and (max-width: 1024px) {
+    .album {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .albums {
+        flex-direction: column;
+    }
+
+    .album {
+        width: 90%;
+    }
+}
